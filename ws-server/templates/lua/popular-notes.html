@@ -1,0 +1,31 @@
+<div class="slick-carousel-3">
+  {% for k, v in pairs(items) do %}
+  <div class="p-notes-block">
+    <div class="author">
+      <img src="https://randomuser.me/api/portraits/men/{{v["image"]}}.jpg"
+      class="avatar" />
+      <p>{{v["firstName"]}} {{v["lastName"]}}</p>
+    </div>
+    <div class="p-note">
+      <p>{{v["heading"]}}</p>
+      <ul>
+        <li>{{v["parapraph1"]}}</li>
+        <li>{{v["parapraph2"]}}</li>
+        <li>{{v["parapraph3"]}}</li>
+        <li>{{v["parapraph4"]}}</li>
+        <li>{{v["parapraph5"]}}</li>
+        <li>{{v["parapraph6"]}}</li>
+        <li>{{v["parapraph7"]}}</li>
+      </ul>
+    </div>
+    <div>
+      <div class="rat-date">
+        <div class="rating">
+          <img src="images/rating.png" alt="rating" /> {{v["rating"]}}%
+        </div>
+        <div class="date date-p-notes">{{v["day"]}} {{v["month"]}} 2020</div>
+      </div>
+    </div>
+  </div>
+  {% end %}
+</div>

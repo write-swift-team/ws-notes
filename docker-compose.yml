@@ -1,0 +1,61 @@
+version: '3.7'
+services:
+  ws-reviews:
+    build:
+      context: ws-reviews
+      dockerfile: Dockerfile
+    networks:
+      private:
+        # the aliases are not required, but are useful if the applications want to internally
+        # reference each other by host name
+        aliases:
+        - "ws-reviews"
+      public:
+    ports:    
+      - "9948:9948"  
+  
+  ws-popular-notes:
+    build:
+      context: ws-popular-notes
+      dockerfile: Dockerfile
+    networks:
+      private:
+        # the aliases are not required, but are useful if the applications want to internally
+        # reference each other by host name
+        aliases:
+        - "ws-popular-notes"
+      public:
+    ports:    
+      - "9949:9949"  
+    
+  ws-nginx:
+    build:
+      context: ws-server
+      dockerfile: Dockerfile
+    depends_on:
+      - "ws-reviews"   
+      - "ws-popular-notes" 
+    networks:
+      private:
+        # the aliases are not required, but are useful if the applications want to internally
+        # reference each other by host name
+        aliases:
+        - "ws-nginx"
+      public:
+    ports:    
+      - "9950:80" 
+
+    # volumes are commented due to manual copy in circle config.xml
+    volumes:
+      - ./ws-server/html:/usr/local/openresty/nginx/html
+      - ./ws-server/templates:/usr/local/openresty/nginx/templates
+      - ./ws-server/conf/conf.d/default.conf:/usr/local/openresty/nginx/conf/conf.d/default.conf 
+      # this differs from a normal -v folder mount to maintaine with/out traefik 
+      # - ./fp-server/conf/conf.d/default-traefik.conf:/etc/nginx/conf.d/default.conf
+
+networks:
+  # everything that is *only* on "internal network" cannot talk to WAN
+  private:
+    internal: true
+  # add this network to a container to make it talk to the rest of the world
+  public:

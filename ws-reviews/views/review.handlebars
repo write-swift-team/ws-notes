@@ -1,0 +1,15 @@
+<div class="slick-carousel-2">
+    {{#each sampleReview}}
+    <div class="review-block">
+        <div class="author">
+            <img src="https://randomuser.me/api/portraits/men/{{this.image}}.jpg" class="avatar">
+            <p>{{this.firstName}} {{this.lastName}}</p>
+        </div>
+        <div class="review">
+            {{this.review}}
+        </div>
+        <div class="stars-container" id="stars-{{@index}}">{{this.stars}}</div>
+        <div class="date">{{this.minute}} minutes ago</div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,36 @@
+.prices-block {
+  width: 24%;
+}
+.review-block {
+  width: 22%;
+  margin-right: 30px;
+  padding: 20px 20px 10px 30px;
+}
+.review {
+  font-size: 16px;
+  height: 300px;
+}
+.offer-container img {
+  height: 350px;
+}
+.offer-info h1 {
+  margin: 0;
+  font-size: 52px;
+}
+.offer-info h2 {
+  font-size: 28px;
+}
+.give {
+  font-size: 36px;
+}
+.offer-info button {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+}
+.navigation-footer a {
+  font-size: 18px;
+}
+.navigation-footer {
+  margin-left: 0px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" media="screen and (max-height: 768px)" href="mobile.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/slick-1.8.1/slick/slick-theme.css"
+    />
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        for (
+          j = 0;
+          j <= document.getElementsByClassName("review-block").length - 1;
+          j++
+        ) {
+          let id = "stars-" + j;
+          let element = document.getElementById(id);
+          let n = element.innerHTML;
+          element.innerHTML = "";
+          if (n == 1) {
+            for (i = 0; i < 4; i++) {
+              element.innerHTML +=
+                '<img src="images/star.svg" alt="star" class="star" />';
+            }
+          }
+          if (n == 2) {
+            for (i = 0; i < 4; i++) {
+              element.innerHTML +=
+                '<img src="images/star.svg" alt="star" class="star" />';
+            }
+            element.innerHTML +=
+              '<img src="images/half-star.svg" alt="star" class="star" />';
+          }
+          if (n == 3) {
+            for (i = 0; i < 5; i++) {
+              element.innerHTML +=
+                '<img src="images/star.svg" alt="star" class="star" />';
+            }
+          }
+        }
+      });
+    </script>
+    <title>WS Notes</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="logo"
+          />
+          <span class="logo-notes">NOTES</span>
+        </div>
+        <div class="navigation">
+          <a href="#what-ws">About us</a>
+          <a href="#prices">Prices</a>
+          <a href="#">Contacts</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <img src="images/board.png" alt="board" class="notepad" />
+      <div class="slider-container">
+        <div class="slick-carousel">
+          <img src="images/slider-1.png" alt="" />
+          <img src="images/slider-2.png" alt="" />
+          <img src="images/slider-3.png" alt="" />
+          <img src="images/slider-4.png" alt="" />
+        </div>
+        <div class="container-button">
+          <button class="button-price button-price-gold">START TRANING</button>
+          <button class="button-price">GO NOW</button>
+        </div>
+      </div>
+    </div>
+    <div class="what-ws" id="what-ws">
+      <div class="what-ws-container">
+        <div class="info">
+          <h1>What is Write Swift Notes?</h1>
+          <p>
+            WS Notes is a service for writing educational notes online with
+            quick and easy editing functions. <br />
+            <br />
+            Write a draft, edit when the time comes, share the result with your
+            friends. Over the years of interaction, our user base itself will be
+            able to provide colleagues in writing with ready-made versions of
+            abstracts on various topics. <br />
+            <br />
+            You no longer need to ask your neighbor what is written on the
+            board: ask your friend to turn on the live broadcast of the outline.
+            Share, interact and enjoy learning!
+          </p>
+        </div>
+        <h1>Why us?</h1>
+        <div class="why-us">
+          <div>
+            <img src="images/why-us-1.png" alt="" /> <br />
+            Freedom on all <br />
+            devices
+          </div>
+          <div>
+            <img src="images/why-us-2.png" alt="" /> <br />
+            Quick notes
+          </div>
+          <div>
+            <img src="images/why-us-3.png" alt="" /> <br />
+            Convenient storage
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular-notes" id="popular-notes">
+      <h1 class="h1-lp">Popular Notes</h1>
+      <div class="line-pop"></div>
+      <div class="blocks-p-notes">
+          <!--# include virtual="/lua/popular-notes"-->
+      </div>
+    </div>
+      <div class="prices" id="prices">
+        <div class="white-line"></div>
+        <h1 class="h1-lp">Prices</h1>
+        <h2 class="h2-lp">Education is the best investment!</h2>
+        <div class="blocks-prices">
+          <div class="prices-block">
+            <h1>Month</h1>
+            <div class="line-price-1"></div>
+            <div>
+              <span class="price">3$</span>
+              <span class="time">/month</span>
+            </div>
+            <ul class="description">
+              <li class="description-item">
+                Access to all innovations throughout the month
+              </li>
+              <li class="description-item"><div>+10 draft slots</div></li>
+              <li class="description-item">
+                Access to a global database of notes throughout the month
+              </li>
+            </ul>
+            <div class="button-container">
+              <button class="button-price">SUBSCRIBE</button>
+            </div>
+          </div>
+          <div class="sale"><div class="v-sale-container">40%</div></div>
+          <div class="prices-block prices-block-gold">
+            <h1>Year</h1>
+            <div class="line-price-2"></div>
+            <div>
+              <span class="price">22$</span>
+              <span class="time">/year</span>
+            </div>
+            <ul class="description">
+              <li class="description-item description-item-gold">
+                Access to all innovations that will appear throughout the year
+              </li>
+              <li class="description-item description-item-gold">
+                Unlimited drafts
+              </li>
+              <li class="description-item description-item-gold">
+                Access to a global database of notes throughout the year
+              </li>
+              <li class="description-item description-item-gold">
+                The account will be highlighted in gold
+              </li>
+            </ul>
+            <div class="button-container">
+              <button class="button-price button-price-gold">SUBSCRIBE</button>
+            </div>
+          </div>
+          <div class="prices-block">
+            <h1>Forever</h1>
+            <div class="line-price-3"></div>
+            <div>
+              <span class="price">49$</span>
+              <span class="time">/once</span>
+            </div>
+            <ul class="description">
+              <li class="description-item">
+                Access to all innovations and VIP-functions forever!
+              </li>
+              <li class="description-item">
+                <div>The ability to create infinitely many courses</div>
+              </li>
+              <li class="description-item">
+                Access to a global database of notes forever
+              </li>
+              <li class="description-item">
+                Respect from the creators: participate in monthly forums
+              </li>
+            </ul>
+            <div class="button-container">
+              <button class="button-price">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="temporary-offer">
+        <div class="blue-line"></div>
+        <div class="offer-container">
+          <img src="images/offer-image.png" alt="image" />
+          <div class="offer-info">
+            <h1>Temporary Offer!</h1>
+            <h2>from 25.11 to 25.12</h2>
+            <div class="give">Giveaway 100 Subscriptions Forever!</div>
+            <button>TERMS OF ACTION</button>
+          </div>
+        </div>
+      </div>
+      <div class="reviews" id="reviews">
+        <div class="black-line"></div>
+        <h1 class="h1-lp">Reviews</h1>
+        <h2 class="h2-lp">
+          “The best way to find out if you can trust somebody is to trust them”
+        </h2>
+        <div class="blocks-reviews">
+          <!--# include virtual="/review"-->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <img
+          src="images/logo-footer.png"
+          alt="logo"
+        />
+        <div class="navigation-footer">
+          <a href="#">Terms & conditions</a>
+          <a href="#">Privacy policy</a>
+          <a href="#">Cookies policy</a>
+          <a href="#">Copyrights Notification</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
