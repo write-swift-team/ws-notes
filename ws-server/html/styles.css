@@ -63,7 +63,7 @@ header {
   justify-content: space-between;
 }
 .notepad {
-  width: 53%;
+  max-width: 54%;
   margin-bottom: -6px;
   margin-left: -100px;
 }
@@ -522,4 +522,198 @@ footer {
 }
 .navigation-footer a:hover {
   text-decoration: underline;
+}
+@media screen and (min-width: 1400px) {
+  .notepad {
+    max-width: 55%;
+    margin-left: -130px;
+  }
+  .logo  img{
+    width: 80px;
+    height: 80px;
+  }
+  .logo-notes {
+    font-size: 53px;
+  }
+  .navigation a {
+    margin-left: 66px;
+    font-size: 27px;
+  }
+  .slick-carousel {
+    width: 620px;
+  }
+  .container-button {
+    margin-top: 55px;
+  }
+  .container-button button:first-child {
+    margin-right: 110px;
+  }
+  .container-button button {
+    font-size: 18px;
+    width: 220px;
+    height: 38px;
+  }
+  .slick-carousel-3 {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .notepad {
+    max-width: 56%;
+    margin-left: -230px;
+  }
+  .logo  img{
+    width: 88px;
+    height: 88px;
+  }
+  .logo-notes {
+    font-size: 58px;
+  }
+  .navigation a {
+    margin-left: 72px;
+    font-size: 29px;
+  }
+  .slick-carousel {
+    width: 700px;
+  }
+  .container-button {
+    margin-top: 60px;
+  }
+  .container-button button:first-child {
+    margin-right: 120px;
+  }
+  .container-button button {
+    font-size: 19px;
+    width: 240px;
+    height: 42px;
+  }
+  .slick-carousel-3 {
+    width: 80%;
+  }
+  .p-notes-block {
+    height: 550px;
+    padding: 5px 30px 0px 30px;
+    margin: 0 20px;
+  }
+  .p-note {
+    font-size: 18px;
+    height: 400px;
+  }
+  .author {
+    font-size: 24px;
+  }
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .p-note p {
+    font-size: 26px;
+  }
+  .p-note ul li {
+    margin-bottom: 3px;
+    font-size: 24px;
+  }
+  .rating {
+    font-size: 28px;
+    font-weight: 100;
+  }
+  .rating img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  .date-p-notes {
+    font-size: 24px;
+  }
+  .slick-carousel-2 {
+    width: 80%;
+  }
+  .review-block {
+    height: 490px;
+    margin: 0 30px;
+  }
+  .review {
+    font-size: 17px;
+    height: 330px;
+    margin-right: 10px;
+  }
+  .star {
+    width: 28px;
+    height: 28px;
+  }
+  .description-item{
+    padding-left: 50px;
+  }
+ .description-item-gold {
+   padding-left: 50px;
+ }
+}
+@media screen and (min-width: 1700px) {
+  .notepad {
+    max-width: 58%;
+    margin-left: -250px;
+  }
+  .logo  img{
+    width: 100px;
+    height: 100px;
+  }
+  .logo-notes {
+    font-size: 75px;
+  }
+  .navigation a {
+    margin-left: 80px;
+    font-size: 32px;
+  }
+  .slick-carousel {
+    width: 780px;
+  }
+  .container-button {
+    margin-top: 65px;
+  }
+  .container-button button:first-child {
+    margin-right: 100px;
+  }
+  .container-button button {
+    font-size: 21px;
+    width: 270px;
+    height: 45px;
+  }
+  .slick-carousel-3 {
+    width: 80%;
+  }
+  .p-notes-block {
+    height: 550px;
+    padding: 5px 30px 0px 30px;
+    margin: 0 40px;
+  }
+  .p-note {
+    font-size: 18px;
+    height: 390px;
+  }
+  .author {
+    font-size: 26px;
+  }
+  .avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .p-note p {
+    font-size: 30px;
+  }
+  .p-note ul li {
+    margin-bottom: 3px;
+    font-size: 26px;
+  }
+  .rating {
+    font-size: 30px;
+    font-weight: 100;
+  }
+  .rating img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+  .date-p-notes {
+    font-size: 24px;
+  }
 }
