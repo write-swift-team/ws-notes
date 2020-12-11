@@ -8,7 +8,8 @@ body {
   padding: 0;
 }
 header {
-  padding-top: 10px;
+  height: 12vh;
+  padding-top: 1vh;
   display: flex;
   justify-content: center;
 }
@@ -23,19 +24,19 @@ header {
   align-items: center;
 }
 .logo  img{
-  width: 72px;
-  height: 72px;
+  width: 6vw;
+  height: auto;
 }
 .logo-notes {
-  font-size: 48px;
+  font-size: 4vw;
   font-weight: 400;
   color: #335a91;
 }
 .navigation a {
-  margin-left: 60px;
+  margin-left: 5vw;
   color: black;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5vw;
   transition: all 0.3s ease;
   display: inline-block;
   line-height: 1;
@@ -57,38 +58,42 @@ header {
   width: 100%;
 }
 .main-container {
+  width: 100%;
   background-image: url(images/bg-main.png);
-  background-size: 117%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.board-slider-container {
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
 .notepad {
-  max-width: 54%;
-  margin-bottom: -6px;
-  margin-left: -100px;
+  max-height: 88vh;
+  margin-left: -45%;
 }
 .slider-container {
-  padding-right: 10%;
-  padding-top: 30px;
+  padding-top: 5vh;
 }
 .slick-carousel {
-  width: 550px;
+  width: 40vw;
 }
 .slick-carousel img:focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
 .container-button {
-  margin-top: 50px;
+  margin-top: 5vw;
   display: flex;
   justify-content: center;
 }
 .container-button button:first-child {
-  margin-right: 100px;
+  margin-right: 8vw;
 }
 .container-button button {
-  font-size: 16px;
-  width: 200px;
-  height: 35px;
+  font-size: 1.3vw;
+  width: 14vw;
+  height: 2.6vw;
 }
 .what-ws {
   text-align: center;
@@ -105,26 +110,26 @@ header {
   width: 80%;
 }
 .info p {
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: 300;
 }
 .what-ws-container h1 {
-  margin-bottom: 50px;
-  font-size: 48px;
+  margin-bottom: 4vw;
+  font-size: 4vw;
   font-weight: 600;
 }
 .why-us {
-  margin-top: 50px;
+  margin-top: 4vw;
   display: flex;
   justify-content: center;
 }
 .why-us div {
-  margin-right: 100px;
-  width: 250px;
-  font-size: 24px;
+  margin-right: 8vw;
+  width: 19vw;
+  font-size: 2vw;
 }
 .why-us img {
-  width: 80px;
+  width: 6vw;
 }
 .why-us div:last-child {
   margin-right: 0;
@@ -523,73 +528,12 @@ footer {
 .navigation-footer a:hover {
   text-decoration: underline;
 }
-@media screen and (min-width: 1400px) {
-  .notepad {
-    max-width: 55%;
-    margin-left: -130px;
-  }
-  .logo  img{
-    width: 80px;
-    height: 80px;
-  }
-  .logo-notes {
-    font-size: 53px;
-  }
-  .navigation a {
-    margin-left: 66px;
-    font-size: 27px;
-  }
-  .slick-carousel {
-    width: 620px;
-  }
-  .container-button {
-    margin-top: 55px;
-  }
-  .container-button button:first-child {
-    margin-right: 110px;
-  }
-  .container-button button {
-    font-size: 18px;
-    width: 220px;
-    height: 38px;
-  }
+/* @media screen and (min-width: 1400px) {
   .slick-carousel-3 {
     width: 75%;
   }
 }
 @media screen and (min-width: 1500px) {
-  .notepad {
-    max-width: 56%;
-    margin-left: -230px;
-  }
-  .logo  img{
-    width: 88px;
-    height: 88px;
-  }
-  .logo-notes {
-    font-size: 58px;
-  }
-  .navigation a {
-    margin-left: 72px;
-    font-size: 29px;
-  }
-  .slick-carousel {
-    width: 700px;
-  }
-  .container-button {
-    margin-top: 60px;
-  }
-  .container-button button:first-child {
-    margin-right: 120px;
-  }
-  .container-button button {
-    font-size: 19px;
-    width: 240px;
-    height: 42px;
-  }
-  .slick-carousel-3 {
-    width: 80%;
-  }
   .p-notes-block {
     height: 550px;
     padding: 5px 30px 0px 30px;
@@ -626,7 +570,6 @@ footer {
     font-size: 24px;
   }
   .slick-carousel-2 {
-    width: 80%;
   }
   .review-block {
     height: 490px;
@@ -649,35 +592,6 @@ footer {
  }
 }
 @media screen and (min-width: 1700px) {
-  .notepad {
-    max-width: 58%;
-    margin-left: -250px;
-  }
-  .logo  img{
-    width: 100px;
-    height: 100px;
-  }
-  .logo-notes {
-    font-size: 75px;
-  }
-  .navigation a {
-    margin-left: 80px;
-    font-size: 32px;
-  }
-  .slick-carousel {
-    width: 780px;
-  }
-  .container-button {
-    margin-top: 65px;
-  }
-  .container-button button:first-child {
-    margin-right: 100px;
-  }
-  .container-button button {
-    font-size: 21px;
-    width: 270px;
-    height: 45px;
-  }
   .slick-carousel-3 {
     width: 80%;
   }
@@ -716,4 +630,4 @@ footer {
   .date-p-notes {
     font-size: 24px;
   }
-}
+} */
