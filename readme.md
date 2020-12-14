@@ -53,11 +53,13 @@ module.exports = router;
 15. Перейти в бразуер по адресу localhost:3000/name-of-routes, где name-of-routes - путь, указанный в 40 строке файла app.js
 16. Проверить генерацию файлов (должен вывестить массив json-объектов), перейти в текстовый редактов и в паке views создать handlebars файл (name-of-service.handlebars)
 17. Вставить пример вида:
+"
 <ul>
     {{#each sampleReview}}
     <li>Name: {{this.firstName}}, Last Name: {{this.lastName}}</li>
     {{/each}}
 </ul>
+"
 Где sampleReview название схемы шаблонизации, firstName - название ключа, указанное в файле name-of-service.js
 
 18. Перейти в файл name-of-service.js, изменить строку "res.send(sample);" на "res.render('name-of-service', { sampleName: sample});", где name-of-service - название handlebars файла, sampleName - название схемы шаблонизации, sample - шаблонизируемая схема с json-объектами.
