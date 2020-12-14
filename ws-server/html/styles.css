@@ -140,8 +140,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 .line-pop {
   width: 15%;
@@ -226,12 +226,12 @@ header {
   margin: auto;
 }
 .h1-lp {
-  font-size: 48px;
+  font-size: 4vw;
   margin-bottom: 0;
   font-weight: 400;
 }
 .h2-lp {
-  font-size: 26px;
+  font-size: 2vw;
   font-weight: 100;
   margin-top: 10px;
   margin-bottom: 50px;
