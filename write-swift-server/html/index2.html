@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to CoffeeShop!</title>
+    <style>
+      body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to CoffeeShop!</h1>
+    <p>
+      Date:
+      <!--# echo var="date_local"-->
+    </p>
+    <p>
+      Test SSI / Lua:
+      <!--#include virtual="/name" -->
+      <!--#include virtual="/review" -->
+      <!--#include virtual="/avatar" -->
+    </p>
+  </body>
+</html>
