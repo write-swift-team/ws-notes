@@ -53,7 +53,7 @@ module.exports = router;
 15. Перейти в бразуер по адресу localhost:3000/name-of-routes, где name-of-routes - путь, указанный в 40 строке файла app.js
 16. Проверить генерацию файлов (должен вывестить массив json-объектов), перейти в текстовый редактов и в паке views создать handlebars файл (name-of-service.handlebars)
 17. Вставить пример вида:
-(где точка - это <li>, а после {{this.lastName}} идет </li>)
+(где точка - это тег li, а после {{this.lastName}} идет закрытие тега li)
 
 <ul>
     {{#each sampleReview}}
